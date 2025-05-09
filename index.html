@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>A23-game</title>
+  <link href="A23.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="controls">
+    <div class="control-row">
+      <label>Rows: <input type="number" id="numRows" min="2" max="10" value="2"></label>
+      <label>Columns: <input type="number" id="numCols" min="2" max="10" value="2"></label>
+    </div>
+    <div class="control-row">
+      <button id="startGame">Start Game</button>
+      <button id="resetGame">Reset Game</button>
+    </div>
+    <div id="score">Score - A: <span id="scoreA">0</span> | B: <span id="scoreB">0</span></div>
+  </div>
+  <canvas id="gameCanvas"></canvas>
+  <div id="info">Zoom: 1.00 | ver 1.3 | Turn: Player A</div>
+  <div id="winner" style="display: none;"></div>
+  <script src="A23.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: rgb(8,2,24);
+}
+
+#controls {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(225,225,225);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.control-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#controls label {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  #controls {
+    position: fixed;
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    padding: 15px;
+  }
+  
+  #controls input {
+    width: 70px;
+    padding: 10px;
+  }
+  
+  #controls button {
+    padding: 12px 24px;
+    width: 100%;
+  }
+  
+  #info {
+    top: auto;
+    bottom: 180px;
+  }
+  
+  .control-row {
+    justify-content: space-between;
+  }
+}
+
+#score {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(255,255,255);
+}
+
+#controls input {
+  width: 60px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#controls button {
+  background: rgb(38,160,207);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  min-width: 120px;
+}
+
+#controls button:hover {
+  background: rgb(48,170,217);
+}
+
+#gameCanvas {
+  display: block;
+}
+
+#info {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: rgb(225,225,225);
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+#winner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255,0,0);
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
